@@ -22,12 +22,15 @@ if (productType === 'sports') {
 }
 
 // Using Enums
+// If you want to just check the index values (Ex. 0, 1, 2) of the item of an enum
+// you can use const enum. But if you want to see both the index and strings (details of the enum)
+// just use enum
 enum ProductType {
   Sports,
   HomeGoods,
-  Groceries,
+  Groceries
 }
 let pt = ProductType.Sports;
-if (pt === ProductType.Sports) {
+if(pt === ProductType.Sports) {
   console.log('Found sports product type.');
 }
